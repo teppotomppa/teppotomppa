@@ -1,19 +1,21 @@
-# Thomas Sihvola - CV
+# 👋 Hi, I'm Thomas Sihvola!
 
-Welcome to my personal CV website! This site showcases my education, work experience, skills, and projects, and is hosted using GitHub Pages.
+Welcome to my GitHub! I'm a third-year IT student at Centria University of Applied Sciences with a passion for cybersecurity, cloud technologies, and software development. I enjoy building practical projects and continuously learning new skills to enhance my expertise in the tech industry.
 
-## About
+### 🔧 Skills and Interests:
+- **Networking & Device Management**: Beginner in networking concepts and device configuration, currently expanding my knowledge in these areas
+- **Project Work**: Experienced in managing and collaborating on academic and personal projects, ensuring timely delivery and effective teamwork
+- **Soft Skills**: Strong communication, customer service, and time management abilities developed through 5+ years of professional experience in customer-facing roles
 
-This website was created to provide a professional overview of my background and capabilities in the IT field. You can explore my:
-- **Education**: Details about my academic achievements.
-- **Work Experience**: Insights into my professional journey, including over five years at Lidl.
-- **Skills**: Technologies and expertise I bring to the table.
-- **Projects**: Highlights of my work, including an Arduino Opla project and GoLang API integration.
+### 🌱 Current Focus:
+I'm currently exploring:
+- Networking concepts and device configuration/administration
+- Advancing my knowledge in network security and cloud infrastructure
+- Gaining hands-on experience with configuring and managing network devices
 
-## Visit the Site
+### 📫 Get in Touch:
+- LinkedIn: [https://www.linkedin.com/in/thomas-sihvola/](#)
+- Email: [thomas.sihvola.99@gmail.com](mailto:thomas.sihvola.99@gmail.com)
+- GitHub: [https://github.com/teppotomppa](https://github.com/teppotomppa)
 
-Check out my CV online: [https://thomassihvola.github.io](https://thomassihvola.github.io)
-
-## Feedback
-
-Feel free to open an issue or contact me if you have any suggestions or questions!
+Thanks for visiting my profile, and feel free to check out my projects or reach out!
