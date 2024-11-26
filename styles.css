@@ -41,7 +41,7 @@ header {
 }
 
 /* Navigation Bar (Navbar) Styling */
-.navbar {
+navbar {
     background-color: #1e1e1e;
     position: sticky; /* Makes the navbar sticky */
     top: 0;
@@ -51,7 +51,7 @@ header {
 	margin-top: 1rem;
 }
 
-.navbar ul {
+navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -60,12 +60,12 @@ header {
 	text-align: Center;
 }
 
-.navbar ul li {
+navbar ul li {
     margin: 0 15px; /* Space between items */
 	display: inline;
 }
 
-.navbar ul li a {
+navbar ul li a {
     color: #c5f4ff;
     text-decoration: none;
     font-size: 20px;
@@ -73,7 +73,7 @@ header {
     transition: color 0.3s ease;
 }
 
-.navbar ul li a:hover {
+navbar ul li a:hover {
     background-color: #000;
     border-radius: 5px; /* Optional: adds rounded corners to the hover effect */
 }
@@ -126,7 +126,7 @@ footer {
 }
 
 /* Profile Photo styles */
-.profile-photo img {
+profile-photo img {
     width: 250px; /* Set a width for the image */
     height: 250px; /* Set a height for the image */
     border-radius: 50%; /* Makes the image round */
