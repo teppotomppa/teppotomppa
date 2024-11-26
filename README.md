@@ -1,16 +1,19 @@
-## Hi there 👋
+# Thomas Sihvola - CV
 
-<!--
-**teppotomppa/teppotomppa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Welcome to my personal CV website! This site showcases my education, work experience, skills, and projects, and is hosted using GitHub Pages.
 
-Here are some ideas to get you started:
+## About
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+This website was created to provide a professional overview of my background and capabilities in the IT field. You can explore my:
+- **Education**: Details about my academic achievements.
+- **Work Experience**: Insights into my professional journey, including over five years at Lidl.
+- **Skills**: Technologies and expertise I bring to the table.
+- **Projects**: Highlights of my work, including an Arduino Opla project and GoLang API integration.
+
+## Visit the Site
+
+Check out my CV online: [https://thomassihvola.github.io](https://thomassihvola.github.io)
+
+## Feedback
+
+Feel free to open an issue or contact me if you have any suggestions or questions!
