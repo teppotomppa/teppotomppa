@@ -1,0 +1,326 @@
+/* Ensure box-sizing includes padding and border in element's total width and height */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent sideways scrolling */
+}
+
+body {
+    font-family: Comic Sans, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	background-color: #181818;
+	color: #f0f0f0;
+}
+
+main {
+    flex: 1;
+	font-size: 20px;
+    padding: 1rem;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+	border-bottom: 3px solid #00bcd4;
+	text-color: #7ce6ff;
+}
+
+/* Navigation Bar (Navbar) Styling */
+.navbar {
+    background-color: #1e1e1e;
+    position: sticky; /* Makes the navbar sticky */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 0; /* Increases the height of the navbar */
+	margin-top: 1rem;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers the navigation items */
+	text-align: Center;
+}
+
+.navbar ul li {
+    margin: 0 15px; /* Space between items */
+	display: inline;
+}
+
+.navbar ul li a {
+    color: #c5f4ff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 20px; /* Increases padding to make the items taller */
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #000;
+    border-radius: 5px; /* Optional: adds rounded corners to the hover effect */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    margin-bottom: 2rem;
+    text-align: left; /* Align the list to the left */
+    max-width: 600px; /* Max width for the content */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto;
+}
+
+section h2 {
+	margin-top: 1rem;
+}
+
+ul {
+    list-style-type: circle; /* Use circle bullets */
+    padding-left: 200px; /* Adjust padding to align bullets correctly */
+}
+
+li {
+    margin-bottom: 10px; /* Add space between list items */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Profile Photo styles */
+.profile-photo img {
+    width: 250px; /* Set a width for the image */
+    height: 250px; /* Set a height for the image */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    border: 3px solid #000; /* Optional: Adds a border around the image */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+}
+
+/* Contact section styles */
+#home {
+    text-align: center; /* Center the contact section text */
+}
+
+#home h2 {
+    margin-bottom: 1rem; /* Space below the title */
+}
+
+/* Boxed List Items */
+#home p {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+	margin-top: 50px;
+}
+
+#home p {
+    margin-bottom: 15px; /* Space between the boxes */
+    padding: 20px;
+    background-color: #7db4c1; /* Dark background color for each box */
+    border-radius: 8px; /* Rounded corners for the box */
+    border: 2px solid #333; /* Border around the box */
+    color: #000; /* Text color inside the box */
+}
+
+#home ul li p {
+    margin: 0; /* Remove margin from the paragraph to avoid extra space */
+}
+
+/* Education section styles */
+#education {
+    text-align: left; /* Left-aligned text */
+    padding: 20px 0;
+    max-width: 900px; /* Prevents stretching */
+    margin: 0 auto; /* Centers the section horizontally */
+}
+
+#education h2 {
+    text-align: center; /* Centers the header */
+    margin-bottom: 20px; /* Adds space below the title */
+}
+
+#education p {
+    font-size: 20px; /* Adjusts font size */
+    line-height: 1.5; /* Improves readability */
+}
+
+/* Boxed List Items */
+#education ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+#education ul li {
+    margin-bottom: 15px; /* Space between the boxes */
+    padding: 20px;
+    background-color: #444; /* Dark background color for each box */
+    border-radius: 8px; /* Rounded corners for the box */
+    border: 2px solid #333; /* Border around the box */
+    color: #fff; /* Text color inside the box */
+	text-align: Center;
+}
+
+#education ul li p {
+    margin: 0; /* Remove margin from the paragraph to avoid extra space */
+}
+
+/* Work Experience section styles */
+#work-experience {
+    text-align: left; /* Left-aligned text */
+    padding: 20px 0;
+    max-width: 900px; /* Prevents stretching */
+    margin: 0 auto; /* Centers the section horizontally */
+}
+
+#work-experience h2 {
+    text-align: center; /* Centers the header */
+    margin-bottom: 20px; /* Adds space below the title */
+}
+
+#work-experience p {
+    font-size: 20px; /* Adjusts font size */
+    line-height: 1.5; /* Improves readability */
+	text-align: Center;
+}
+
+/* Boxed List Items */
+#work-experience ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+#work-experience ul li {
+    margin-bottom: 15px; /* Space between the boxes */
+    padding: 20px;
+    background-color: #444; /* Dark background color for each box */
+    border-radius: 8px; /* Rounded corners for the box */
+    border: 2px solid #333; /* Border around the box */
+    color: #fff; /* Text color inside the box */
+	text-align: Center;
+}
+
+#work-experience ul li p {
+    margin: 0; /* Remove margin from the paragraph to avoid extra space */
+}
+
+/* Skills section styles */
+#skills {
+    text-align: left; /* Keep text aligned to the left */
+    padding: 20px 0; /* Adds padding to the section */
+    max-width: 900px; /* Adds a maximum width to prevent content from being too stretched */
+    margin: 0 auto; /* Centers the section horizontally */
+}
+
+#skills h2 {
+    text-align: center; /* Center align the heading */
+    margin-bottom: 20px; /* Adds space below the title */
+}
+
+#skills p {
+    font-size: 20px; /* Adjust font size for readability */
+    line-height: 1.5; /* Adjust line height for readability */
+}
+
+/* Boxed List Items */
+#skills ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+#skills ul li {
+    margin-bottom: 15px; /* Space between the boxes */
+    padding: 20px;
+    background-color: #444; /* Dark background color for each box */
+    border-radius: 8px; /* Rounded corners for the box */
+    border: 2px solid #333; /* Border around the box */
+    color: #fff; /* Text color inside the box */
+	text-align: Center;
+}
+
+#skills ul li p {
+    margin: 0; /* Remove margin from the paragraph to avoid extra space */
+}
+
+/* Skills section styles */
+#about {
+    text-align: left; /* Keep text aligned to the left */
+    padding: 20px 0; /* Adds padding to the section */
+    max-width: 900px; /* Adds a maximum width to prevent content from being too stretched */
+    margin: 0 auto; /* Centers the section horizontally */
+}
+
+#about h2 {
+    text-align: center; /* Center align the heading */
+    margin-bottom: 20px; /* Adds space below the title */
+}
+
+#about p {
+    font-size: 20px; /* Adjust font size for readability */
+    line-height: 1.5; /* Adjust line height for readability */
+	margin-bottom: 15px; /* Space between the boxes */
+    padding: 20px;
+    background-color: #444; /* Dark background color for each box */
+    border-radius: 8px; /* Rounded corners for the box */
+    border: 2px solid #333; /* Border around the box */
+    color: #fff; /* Text color inside the box */
+	text-align: Center;
+}
+
+/* Boxed List Items */
+#about ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+#about ul li {
+    margin-bottom: 15px; /* Space between the boxes */
+    padding: 20px;
+    background-color: #444; /* Dark background color for each box */
+    border-radius: 8px; /* Rounded corners for the box */
+    border: 2px solid #333; /* Border around the box */
+    color: #fff; /* Text color inside the box */
+	text-align: Center;
+}
+
+#about ul li p {
+    margin: 0; /* Remove margin from the paragraph to avoid extra space */
+}
