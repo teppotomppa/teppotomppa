@@ -1,66 +1,81 @@
-/* General Styling */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 20px;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
-}
+<style>
+    /* Ensure box-sizing includes padding and border in element's total width and height */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-/* Header Section */
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent sideways scrolling */
+    }
 
-header h1 {
-  font-size: 2.5em;
-  color: #4CAF50;
-  margin-bottom: 5px;
-}
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-header p {
-  font-size: 1.2em;
-  color: #666;
-}
+    main {
+        flex: 1;
+        padding: 1rem;
+        background-color: #111;
+        color: #fff;
+        text-align: center;
+    }
 
-/* Section Styling */
-section {
-  margin-bottom: 20px;
-  padding: 15px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+    header {
+        background-color: #111;
+        color: #fff;
+        padding: 2rem;
+        text-align: center;
+        width: 100%;
+    }
 
-section h2 {
-  font-size: 1.5em;
-  color: #4CAF50;
-  border-bottom: 2px solid #4CAF50;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-}
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+    }
 
-section p {
-  margin: 5px 0;
-}
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
 
-/* Footer */
-footer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 0.9em;
-  color: #777;
-}
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
 
-/* Links */
-a {
-  color: #4CAF50;
-  text-decoration: none;
-}
+    section {
+        margin-bottom: 2rem;
+        text-align: left; /* Align the list to the left */
+        max-width: 600px; /* Max width for the content */
+        margin-left: auto; /* Center horizontally */
+        margin-right: auto;
+    }
 
-a:hover {
-  text-decoration: underline;
-}
+    ul {
+        list-style-type: circle; /* Use circle bullets */
+        padding-left: 20px; /* Adjust padding to align bullets correctly */
+    }
+
+    li {
+        margin-bottom: 10px; /* Add space between list items */
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        bottom: 0;
+    }
+</style>
