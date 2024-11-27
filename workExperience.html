@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Work Experience</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Thomas Sihvola</h1>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-				<li><a href="workExperience.html">Work Experience</a></li>
-                <li><a href="skills.html">Skills</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="meme.html">Meme</a></li>
-            </ul>
-        </nav>
+      <h1>Thomas Sihvola</h1>
+      <div class="menu-toggle">☰</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="workExperience.html">Work Experience</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="meme.html">Meme</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="work-experience">
-            <h2>Work Experience</h2>
-            <p>Lidl Suomi Ky, Salesperson (2018–Present)</p>
-            <ul>
-                <br>
-                <li>Customer service</li>
-                <li>Cash register work</li>
-                <li>Stocking shelves</li>
-				<li>Cleaning the store</li>
-            </ul>
-        </section>
+      <section id="work-experience">
+        <h2>Work Experience</h2>
+        <p>Lidl Suomi Ky, Salesperson (2018–Present)</p>
+        <ul>
+          <br />
+          <li>Customer service</li>
+          <li>Cash register work</li>
+          <li>Stocking shelves</li>
+          <li>Cleaning the store</li>
+        </ul>
+      </section>
     </main>
     <footer>
-        <p>&copy; Thomas Sihvola 2024. All rights reserved.</p>
+      <p>&copy; Thomas Sihvola 2024. All rights reserved.</p>
     </footer>
-</body>
+    <script>
+      document.querySelector(".menu-toggle").addEventListener("click", () => {
+        document.querySelector(".navbar").classList.toggle("active");
+      });
+    </script>
+  </body>
 </html>
