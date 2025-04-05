@@ -14,7 +14,7 @@ I'm currently exploring:
 - Gaining hands-on experience with configuring and managing network devices
 
 ### 📫 Get in Touch:
-- LinkedIn: [https://www.linkedin.com/in/thomas-sihvola/](#)
+- LinkedIn: [https://www.linkedin.com/in/thomas-sihvola/](https://www.linkedin.com/in/thomas-sihvola/)
 - Email: [thomas.sihvola.99@gmail.com](mailto:thomas.sihvola.99@gmail.com)
 - GitHub: [https://github.com/teppotomppa](https://github.com/teppotomppa)
 
