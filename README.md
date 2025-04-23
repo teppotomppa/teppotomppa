@@ -1,23 +1,22 @@
 # 👋 Hi, I'm Thomas Sihvola!
 
-Welcome to my GitHub! I'm a third-year IT student at Centria University of Applied Sciences with a passion for cybersecurity, cloud technologies, and software development. I enjoy building practical projects and continuously learning new skills to enhance my expertise in the tech industry.
+Welcome to my GitHub! I'm a third-year IT student at Centria University of Applied Sciences with a strong interest in **web development**, **networking**, and **network security**. I enjoy building practical projects and constantly learning new technologies to deepen my expertise in these areas.
 
 ### 🔧 Skills and Interests:
-- **Networking & Device Management**: Beginner in networking concepts and device configuration, currently expanding my knowledge in these areas
-- **Project Work**: Experienced in managing and collaborating on academic and personal projects, ensuring timely delivery and effective teamwork
-- **Web Development**: Basic knowledge of building full stack web applications. learned through school courses and projects
-- **Soft Skills**: Strong communication, customer service, and time management abilities developed through 5+ years of professional experience in customer-facing roles
+- **Web Development**: Hands-on experience building full stack web applications using tools like React, Node.js, and SQLite — gained through school projects and personal work  
+- **Networking & Network Security**: Currently expanding my knowledge in network configuration, device management, and security practices through school courses and self-study  
+- **Project Work**: Comfortable working on academic and independent projects with a focus on teamwork, deadlines, and delivering results  
+- **Soft Skills**: Strong communication, customer service, and time management skills developed through over 5 years in customer-facing roles
 
 ### 🌱 Current Focus:
 I'm currently exploring:
-- Networking concepts and device configuration/administration
-- Advancing my knowledge in network security and cloud infrastructure
-- Gaining hands-on experience with configuring and managing network devices
-- Trying to get a deeper understanding and skills on web development as a whole
+- Web development from frontend to backend  
+- Deeper understanding of secure network design and administration  
+- Cloud technologies and infrastructure as part of modern web apps  
 
 ### 📫 Get in Touch:
-- LinkedIn: [https://www.linkedin.com/in/thomas-sihvola/](https://www.linkedin.com/in/thomas-sihvola/)
-- Email: [thomas.sihvola.99@gmail.com](mailto:thomas.sihvola.99@gmail.com)
-- GitHub: [https://github.com/teppotomppa](https://github.com/teppotomppa)
+- 💼 [LinkedIn](https://www.linkedin.com/in/thomas-sihvola/)
+- 📧 [thomas.sihvola.99@gmail.com](mailto:thomas.sihvola.99@gmail.com)
+- 🖥️ [GitHub](https://github.com/teppotomppa)
 
-Thanks for visiting my profile, and feel free to check out my projects or reach out!
+Thanks for checking out my profile! Feel free to explore my projects or connect with me.
