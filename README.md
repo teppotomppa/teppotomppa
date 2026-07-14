@@ -8,9 +8,9 @@ I'm particularly interested in computer networks, network configuration, mobile 
 
 Here you'll find a selection of projects I've completed during my studies and in my own time, including:
 
-- Train Location Tracker
-- Memory Game
-- React Native mobile application (Thesis project)
+- [Train Location Tracker](https://github.com/teppotomppa/super-duper-guacamole)
+- [Memory Game](https://github.com/teppotomppa/webdev-project)
+- React Native mobile application (Thesis project, currently a private repository)
 
 ## Technologies
 
