@@ -20,7 +20,11 @@
                 TS<span>.</span>
             </a>
 
-            <ul class="nav-links">
+            <div class="menu-toggle" id="menu-toggle">
+                &#9776;
+            </div>
+
+            <ul class="nav-links" id="nav-links">
                 <li>
                     <a href="../index.html#home">Home</a>
                 </li>
@@ -153,6 +157,19 @@
     </footer>
 
     <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+            });
+        });
+
         const chydeniaImages = [1, 2, 3, 11, 12, 13, 16];
         const slidesContainer = document.querySelector(".slides");
 
