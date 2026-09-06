@@ -28,3 +28,4 @@ Here you'll find a selection of projects I've completed during my studies and in
 
 - LinkedIn: https://www.linkedin.com/in/thomas-sihvola/
 - Email: thomas.sihvola.99@gmail.com
+- [Portfolio](https://teppotomppa.github.io/teppotomppa/)
