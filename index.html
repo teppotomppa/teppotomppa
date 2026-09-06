@@ -569,6 +569,14 @@
         navLinks.classList.toggle("active");
       });
 
+      document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+          if (window.matchMedia("(max-width: 650px)").matches) {
+            navLinks.classList.remove("active");
+          }
+        });
+      });
+
 
       document.querySelectorAll("a[href]").forEach(link => {
         const href = link.getAttribute("href");
