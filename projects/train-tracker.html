@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Train Location Tracker - Thomas Sihvola">
+
+	<title>Train Location Tracker | Thomas Sihvola</title>
+
+	<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<nav class="navbar">
+			<a href="../index.html" class="logo">
+				TS<span>.</span>
+			</a>
+
+			<ul class="nav-links">
+				<li><a href="../index.html#home">Home</a></li>
+				<li><a href="../index.html#about">About</a></li>
+				<li><a href="../index.html#projects">Projects</a></li>
+				<li><a href="../index.html#experience">Experience</a></li>
+				<li><a href="../index.html#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="project-detail train-project-detail">
+
+			<div class="project-detail-header">
+				<div class="project-detail-heading">
+					<p class="project-type">PRE-ASSIGNMENT FOR A JOB APPLICATION</p>
+
+					<h1>Train Location<br><span>Tracker</span></h1>
+
+					<p class="project-intro">
+						A real-time web application that displays train locations
+						across Finland on an interactive map.
+					</p>
+
+					<div class="project-detail-actions">
+						<a href="https://github.com/teppotomppa/super-duper-guacamole"
+							class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+							View Source ↗
+						</a>
+					</div>
+				</div>
+
+				<aside class="project-meta" aria-label="Project details">
+					<div>
+						<span>Context</span>
+						<strong>Job application pre-assignment</strong>
+					</div>
+					<div>
+						<span>Data</span>
+						<strong>Fintraffic Digitraffic API</strong>
+					</div>
+					<div>
+						<span>Mapping</span>
+						<strong>Leaflet &amp; OpenStreetMap</strong>
+					</div>
+				</aside>
+			</div>
+
+			<div class="project-slideshow train-slideshow" aria-roledescription="carousel"
+				aria-label="Train Location Tracker project images">
+				<div class="slides train-slides"></div>
+
+				<button class="slideshow-button slideshow-previous" type="button"
+					aria-label="Previous Train Tracker image">&#8592;</button>
+				<button class="slideshow-button slideshow-next" type="button"
+					aria-label="Next Train Tracker image">&#8594;</button>
+			</div>
+
+			<div class="project-detail-content">
+				<div class="project-story">
+					<div>
+						<p class="content-kicker">PROJECT STORY</p>
+						<h2>From live data to a clear map</h2>
+					</div>
+
+					<div class="project-copy">
+						<p><strong>Beginning.</strong> This project was created as a pre-assignment for a job application. The goal was to build a simple and useful interface for exploring current train locations in Finland using publicly available real-time data.</p>
+						<p><strong>Development.</strong> The application uses JavaScript and the Fetch API to retrieve GeoJSON data from Fintraffic's Digitraffic service. Leaflet and OpenStreetMap provide the interactive map, while train markers show each train's current position. Users can click a marker to view the train number, speed and last update time, or use the search control to locate a specific active train.</p>
+						<p><strong>Outcome.</strong> The result is a responsive browser-based tracker that refreshes its data every 15 seconds. The application keeps the map current by updating moved trains, removing inactive markers and presenting the latest available information in a straightforward interface.</p>
+					</div>
+				</div>
+
+				<div class="train-feature-grid">
+					<article>
+						<p class="content-kicker">REAL-TIME DATA</p>
+						<h2>Updated every 15 seconds</h2>
+						<p>The app periodically fetches the latest train locations so the map reflects the current state of the network.</p>
+					</article>
+					<article>
+						<p class="content-kicker">INTERACTION</p>
+						<h2>Explore every marker</h2>
+						<p>Clicking a train reveals useful details such as its number, speed and the time of its latest update.</p>
+					</article>
+					<article>
+						<p class="content-kicker">SEARCH</p>
+						<h2>Find a specific train</h2>
+						<p>A train selector helps users locate an active train and focus the map on its current position.</p>
+					</article>
+				</div>
+			</div>
+
+			<a href="../index.html#projects" class="back-link">
+				← Back to Projects
+			</a>
+
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer-content">
+			<p>© 2026 Thomas Sihvola</p>
+			<p>Information &amp; Communication Technology Engineer</p>
+		</div>
+	</footer>
+
+	<script>
+		const trainImages = [
+			"TrainTracker-1.jpg",
+			"TrainTracker-2.jpg",
+			"TrainTracker-3.jpg"
+		];
+		const slidesContainer = document.querySelector(".train-slides");
+
+		trainImages.forEach((imageName, imageIndex) => {
+			const slide = document.createElement("figure");
+			slide.className = imageIndex === 0 ? "slide active" : "slide";
+			slide.innerHTML = `
+				<img src="../images/${imageName}" alt="Train Location Tracker screen ${imageIndex + 1}">
+				<figcaption>${String(imageIndex + 1).padStart(2)} / ${trainImages.length}</figcaption>
+			`;
+			slidesContainer.appendChild(slide);
+		});
+
+		const slides = slidesContainer.querySelectorAll(".slide");
+		const previousButton = document.querySelector(".slideshow-previous");
+		const nextButton = document.querySelector(".slideshow-next");
+		let currentSlide = 0;
+		let slideshowTimer;
+
+		function showSlide(slideIndex) {
+			currentSlide = (slideIndex + slides.length) % slides.length;
+
+			slides.forEach((slide, index) => {
+				slide.classList.toggle("active", index === currentSlide);
+			});
+		}
+
+		function startSlideshow() {
+			clearInterval(slideshowTimer);
+			slideshowTimer = setInterval(() => showSlide(currentSlide + 1), 5000);
+		}
+
+		previousButton.addEventListener("click", () => {
+			showSlide(currentSlide - 1);
+			startSlideshow();
+		});
+
+		nextButton.addEventListener("click", () => {
+			showSlide(currentSlide + 1);
+			startSlideshow();
+		});
+
+		document.addEventListener("visibilitychange", () => {
+			if (document.hidden) {
+				clearInterval(slideshowTimer);
+			} else {
+				startSlideshow();
+			}
+		});
+
+		startSlideshow();
+
+		document.querySelectorAll("a[href]").forEach(link => {
+			const href = link.getAttribute("href");
+
+			if (!href || href.startsWith("#") || href.startsWith("mailto:") || link.target === "_blank") {
+				return;
+			}
+
+			const destination = new URL(href, window.location.href);
+
+			if (destination.origin !== window.location.origin || destination.pathname === window.location.pathname) {
+				return;
+			}
+
+			link.addEventListener("click", event => {
+				event.preventDefault();
+				document.body.classList.add("page-exit");
+
+				setTimeout(() => {
+					window.location.href = destination.href;
+				}, 280);
+			});
+		});
+	</script>
+
+</body>
+
+</html>

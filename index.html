@@ -1,52 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thomas Sihvola - CV</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Thomas Sihvola</h1>
-      <div class="menu-toggle">☰</div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="workExperience.html">Work Experience</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="meme.html">Meme</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="home">
-        <h2>Contact</h2>
-        <br />
-        <br />
-        <!-- Adding the profile photo here -->
-        <div class="profile-photo">
-          <img src="thomas.jpg" alt="Thomas Sihvola" />
-          <br />
-        </div>
-        <p>
-          <a href="mailto:thomas.sihvola.99@gmail.com"
-            >thomas.sihvola.99@gmail.com</a
-          >
-          | <a href="https://linkedin.com/in/thomas-sihvola">LinkedIn</a> |
-          <a href="https://github.com/teppotomppa">GitHub</a>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Thomas Sihvola - Information and Communication Technology Engineer Portfolio">
+
+  <title>Thomas Sihvola | IT Engineer</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ================= NAVIGATION ================= -->
+
+  <header class="header">
+
+    <nav class="navbar">
+
+      <a href="#home" class="logo">
+        TS<span>.</span>
+      </a>
+
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          INFORMATION & COMMUNICATION TECHNOLOGY
         </p>
-      </section>
-    </main>
+
+        <h1>
+          Thomas <span>Sihvola</span>
+        </h1>
+
+        <h2>
+          IT Engineer & Technology Enthusiast
+        </h2>
+
+        <p class="hero-description">
+          Information and Communication Technology Engineer with
+          experience in technical support, telecommunications,
+          networking and software development.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#projects" class="btn btn-primary">
+            View My Projects
+          </a>
+
+          <a href="#contact" class="btn btn-secondary">
+            Contact Me
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-image-container">
+
+        <div class="image-glow"></div>
+
+        <img src="images/profile.jpg" alt="Thomas Sihvola" class="profile-image">
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="section" id="about">
+
+      <div class="section-heading">
+
+        <p class="section-number"></p>
+
+        <h2>About Me</h2>
+
+      </div>
+
+
+      <div class="about-grid">
+
+        <div class="about-text">
+
+          <p>
+            I am a graduated Bachelor of Engineering in Information
+            and Communication Technology with a strong interest in
+            IT infrastructure, optimizations, troubleshooting and software development.
+          </p>
+
+          <p>
+            My professional experience has given me practical
+            experience in technical customer support,
+            telecommunications, troubleshooting and incident
+            management.
+          </p>
+
+          <p>
+            I also have hands-on experience in software development.
+            During my internship, I worked on developing a mobile
+            application pilot from the ground up using React Native,
+            Node.js and Express.
+          </p>
+
+          <p>
+            I enjoy solving technical problems, learning new
+            technologies and understanding how different parts of
+            modern IT environments work together.
+          </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+          <div class="about-card-item">
+            <div>
+              <h3>Networking</h3>
+              <p>
+                Telecommunications and network troubleshooting
+              </p>
+            </div>
+          </div>
+
+          <div class="about-card-item">
+            <div>
+              <h3>Development</h3>
+              <p>
+                React, React Native, Node.js & Express
+              </p>
+            </div>
+          </div>
+
+          <div class="about-card-item">
+            <div>
+              <h3>IT Support</h3>
+              <p>
+                Technical support and incident management
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section class="section projects-section" id="projects">
+
+      <div class="section-heading">
+
+        <p class="section-number"></p>
+
+        <h2>Featured Projects</h2>
+
+        <p class="section-intro">
+          A selection of projects and work I have been involved in.
+        </p>
+
+      </div>
+
+
+      <div class="projects-grid">
+
+
+        <!-- PROJECT 1 -->
+
+        <a href="projects/chydenia.html" class="project-card">
+
+          <div class="project-image chydenia-card-image">
+
+            <img src="images/project-1.jpg" alt="Chydenia mobile application project">
+
+          </div>
+
+          <div class="project-content">
+
+            <p class="project-type">
+              SOFTWARE DEVELOPMENT
+            </p>
+
+            <h3>
+              Chydenia Mobile Application
+            </h3>
+
+            <p>
+              A mobile application pilot developed from the ground up
+              for Shopping Center Chydenia in Kokkola. The project was
+              developed together with Chydenia and another student,
+              spanning two professional internships and a bachelor's thesis. <br><br>
+
+              The application was created to bring Chydenia's services
+              and information into a mobile platform and was developed
+              in close collaboration with the client throughout the project.
+            </p>
+
+            <div class="tech-list">
+
+              <span>React Native</span>
+              <span>Node.js</span>
+              <span>Express</span>
+
+            </div>
+
+          </div>
+
+        </a>
+
+
+        <!-- PROJECT 2 -->
+
+        <a href="projects/memory-game.html" class="project-card">
+
+          <div class="project-image">
+
+            <img src="images/project-2.jpg" alt="Memory Game project preview">
+
+          </div>
+
+          <div class="project-content">
+
+            <p class="project-type">
+              UAS COURSE PROJECT
+            </p>
+
+            <h3>
+              Memory Game
+            </h3>
+
+            <p>
+              A retro-style memory game built with React and NES.css,
+              featuring multiple difficulty levels, persistent highscores
+              stored in SQLite, retro sound effects and animations,
+              and a responsive desktop-friendly design.
+            </p>
+
+            <div class="tech-list">
+
+              <span>React</span>
+              <span>NES.css</span>
+              <span>SQLite</span>
+              <span>Node.js & Express</span>
+
+            </div>
+
+          </div>
+
+        </a>
+
+
+        <!-- PROJECT 3 -->
+
+        <a href="projects/train-tracker.html" class="project-card">
+
+          <div class="project-image train-card-image">
+
+            <img src="images/project-3.jpg" alt="Placeholder project">
+
+          </div>
+
+          <div class="project-content">
+
+            <p class="project-type">
+              PRE-ASSIGNMENT FOR A JOB APPLICATION
+            </p>
+
+            <h3>
+              Train Location Tracker
+            </h3>
+
+            <p>
+              A web application that displays real-time train
+              locations in Finland using Fintraffic’s Digitraffic API.
+              The application shows trains on an interactive Leaflet
+              map and includes train search functionality. The project
+              was developed as a pre-assignment for a job application.
+            </p>
+
+            <div class="tech-list">
+
+              <span>JavaScript</span>
+              <span>Leaflet</span>
+              <span>Digitraffic API</span>
+              <span>HTML & CSS</span>
+              <span>REST API</span>
+
+            </div>
+
+          </div>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section class="section experience-section" id="experience">
+
+      <div class="section-heading">
+
+        <p class="section-number"></p>
+
+        <h2>Work Experience</h2>
+
+      </div>
+
+
+      <div class="timeline">
+
+
+        <!-- TELIA -->
+
+        <div class="timeline-item">
+
+          <div class="timeline-date">
+            2026
+          </div>
+
+          <div class="timeline-content">
+
+            <p class="timeline-company">
+              Telia Finland Oyj
+            </p>
+
+            <h3>
+              Technical Specialist
+            </h3>
+
+            <p>
+              B2B 24/7 Service Desk
+            </p>
+
+            <p class="timeline-description">
+              Technical support and incident management for
+              business customers. Responsibilities included
+              troubleshooting ICT services, customer
+              communication, handling service requests and
+              coordinating incidents together with Telia's
+              specialist and production organizations.
+            </p>
+
+            <div class="tech-list">
+
+              <span>Technical Support</span>
+              <span>Networking</span>
+              <span>Troubleshooting</span>
+              <span>Incident Management</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- SOFTWARE DEVELOPMENT -->
+
+        <div class="timeline-item">
+
+          <div class="timeline-date">
+            2025
+          </div>
+
+          <div class="timeline-content">
+
+            <p class="timeline-company">
+              Internship
+            </p>
+
+            <h3>
+              Software Developer
+            </h3>
+
+            <p>
+              Application Development
+            </p>
+
+            <p class="timeline-description">
+              Developed a mobile application pilot for
+              Kokkolan kauppakeskus Chydenia. The application
+              was developed from the ground up in cooperation
+              with the client.
+            </p>
+
+            <div class="tech-list">
+
+              <span>React Native</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>Agile Development</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- LIDL -->
+
+        <div class="timeline-item">
+
+          <div class="timeline-date">
+            2018–
+          </div>
+
+          <div class="timeline-content">
+
+            <p class="timeline-company">
+              Lidl Suomi Ky
+            </p>
+
+            <h3>
+              Sales Assistant
+            </h3>
+
+            <p class="timeline-description">
+              Customer service, cashier work, stocking,
+              warehouse duties, bakery work and maintaining
+              the cleanliness of the store. The role has
+              developed strong communication, teamwork and
+              responsibility skills.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact-section" id="contact">
+
+      <p class="section-number"></p>
+
+      <h2>
+        Looking for my next
+        <span><br>opportunity.</span>
+      </h2>
+
+      <p>
+        I’m currently looking for a permanent position in IT,
+        software development or technical support. If you think my
+        background could be a good fit for your team, feel free to get in touch.
+      </p>
+
+
+      <div class="contact-links">
+
+        <a href="mailto:thomas.sihvola.99@gmail.com" class="contact-link">
+          <span class="contact-label">EMAIL</span>
+          <span class="contact-value">
+            thomas.sihvola.99@gmail.com
+          </span>
+          <span class="contact-arrow">↗</span>
+        </a>
+
+
+        <a href="https://www.linkedin.com/in/thomas-sihvola/" target="_blank" rel="noopener noreferrer"
+          class="contact-link">
+          <span class="contact-label">LINKEDIN</span>
+          <span class="contact-value">
+            linkedin.com/in/thomas-sihvola
+          </span>
+          <span class="contact-arrow">↗</span>
+        </a>
+
+
+        <a href="https://github.com/teppotomppa" target="_blank" rel="noopener noreferrer"
+          class="contact-link">
+          <span class="contact-label">GITHUB</span>
+          <span class="contact-value">
+            github.com/teppotomppa
+          </span>
+          <span class="contact-arrow">↗</span>
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-      <p>&copy; Thomas Sihvola 2025. All rights reserved.</p>
+
+      <div class="footer-content">
+
+        <p>
+          © 2026 Thomas Sihvola
+        </p>
+
+        <p>
+          This page has been built with the help of Artificial Intelligence (AI)
+          tools. All content and final decisions
+          have been reviewed and approved by me to ensure accuracy and quality.
+        </p>
+
+        <p>
+          Information & Communication Technology Engineer
+        </p>
+
+      </div>
+
     </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
     <script>
-      document.querySelector(".menu-toggle").addEventListener("click", () => {
-        document.querySelector(".navbar").classList.toggle("active");
+
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
       });
+
+
+      document.querySelectorAll("a[href]").forEach(link => {
+        const href = link.getAttribute("href");
+
+        if (!href || href.startsWith("#") || href.startsWith("mailto:") || link.target === "_blank") {
+          return;
+        }
+
+        const destination = new URL(href, window.location.href);
+
+        if (destination.origin !== window.location.origin || destination.pathname === window.location.pathname) {
+          return;
+        }
+
+        link.addEventListener("click", event => {
+          event.preventDefault();
+          document.body.classList.add("page-exit");
+
+          setTimeout(() => {
+            window.location.href = destination.href;
+          }, 280);
+        });
+      });
+
     </script>
-  </body>
+
+</body>
+
 </html>

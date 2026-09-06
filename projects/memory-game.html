@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Memory Game Final Project - Thomas Sihvola">
+
+    <title>Memory Game | Thomas Sihvola</title>
+
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+                TS<span>.</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#experience">Experience</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-detail memory-project-detail">
+
+            <div class="project-detail-header">
+                <div class="project-detail-heading">
+                    <p class="project-type">UAS COURSE PROJECT</p>
+
+                    <h1>Memory<br><span>Game</span></h1>
+
+                    <p class="project-intro">
+                        A retro-styled full-stack memory game built as the final
+                        project for an Advanced Web Development course.
+                    </p>
+
+                    <div class="project-detail-actions">
+                        <a href="https://github.com/teppotomppa/webdev-project" class="btn btn-secondary"
+                            target="_blank" rel="noopener noreferrer">
+                            View Source ↗
+                        </a>
+                    </div>
+                </div>
+
+                <aside class="project-meta" aria-label="Project details">
+                    <div>
+                        <span>Context</span>
+                        <strong>Advanced Web Development final project</strong>
+                    </div>
+                    <div>
+                        <span>Frontend</span>
+                        <strong>React &amp; NES.css</strong>
+                    </div>
+                    <div>
+                        <span>Backend</span>
+                        <strong>Node.js, Express &amp; SQLite</strong>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="project-slideshow memory-slideshow" aria-roledescription="carousel"
+                aria-label="Memory Game project images">
+                <div class="slides memory-slides"></div>
+
+                <button class="slideshow-button slideshow-previous" type="button"
+                    aria-label="Previous Memory Game image">&#8592;</button>
+                <button class="slideshow-button slideshow-next" type="button"
+                    aria-label="Next Memory Game image">&#8594;</button>
+            </div>
+
+            <div class="project-detail-content">
+                <div class="project-story">
+                    <div>
+                        <p class="content-kicker">PROJECT STORY</p>
+                        <h2>From course brief to playable game</h2>
+                    </div>
+
+                    <div class="project-copy">
+                        <p><strong>Beginning.</strong> The project started as the final assignment for an Advanced Web
+                            Development course. The goal was to create a complete web application, so I chose to build a
+                            retro-styled memory game with a visual identity inspired by classic game interfaces.</p>
+                        <p><strong>Development.</strong> The frontend was built with React, NES.css and custom CSS.
+                            Players can choose between Easy, Medium and Hard difficulty levels, while sound effects and
+                            animations make each round feel responsive. A Node.js and Express backend handles the API,
+                            and SQLite stores highscores persistently by difficulty.</p>
+                        <p><strong>Outcome.</strong> The result is a responsive full-stack game with a playable
+                            production deployment, a persistent highscore system and a clear separation between the
+                            React frontend and backend services. The API exposes endpoints for submitting scores and
+                            retrieving highscores for each difficulty level.</p>
+                    </div>
+                </div>
+
+                <div class="memory-feature-grid">
+                    <article>
+                        <p class="content-kicker">GAMEPLAY</p>
+                        <h2>Three ways to play</h2>
+                        <p>Easy, Medium and Hard modes change the challenge while keeping the core matching mechanic
+                            simple to understand.</p>
+                    </article>
+                    <article>
+                        <p class="content-kicker">PERSISTENCE</p>
+                        <h2>Scores that stay</h2>
+                        <p>Highscores are submitted through the backend and stored in SQLite, making the results
+                            available beyond a single session.</p>
+                    </article>
+                    <article>
+                        <p class="content-kicker">EXPERIENCE</p>
+                        <h2>Retro by design</h2>
+                        <p>NES.css, custom styling, sound effects and animations work together to give the game its
+                            playful arcade character.</p>
+                    </article>
+                </div>
+            </div>
+
+            <a href="../index.html#projects" class="back-link">
+                ← Back to Projects
+            </a>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Thomas Sihvola</p>
+            <p>Information &amp; Communication Technology Engineer</p>
+        </div>
+    </footer>
+
+    <script>
+        const memoryImages = [
+            "MemoryGame-1.jpg",
+            "MemoryGame-2.jpg",
+            "MemoryGame-3.jpg",
+            "MemoryGame-4.jpg"
+        ];
+        const slidesContainer = document.querySelector(".memory-slides");
+
+        memoryImages.forEach((imageName, imageIndex) => {
+            const slide = document.createElement("figure");
+            slide.className = imageIndex === 0 ? "slide active" : "slide";
+            slide.innerHTML = `
+                <img src="../images/${imageName}" alt="Memory Game project screen ${imageIndex + 1}">
+                <figcaption>${String(imageIndex + 1).padStart(2)} / ${memoryImages.length}</figcaption>
+            `;
+            slidesContainer.appendChild(slide);
+        });
+
+        const slides = slidesContainer.querySelectorAll(".slide");
+        const previousButton = document.querySelector(".slideshow-previous");
+        const nextButton = document.querySelector(".slideshow-next");
+        let currentSlide = 0;
+        let slideshowTimer;
+
+        function showSlide(slideIndex) {
+            currentSlide = (slideIndex + slides.length) % slides.length;
+
+            slides.forEach((slide, index) => {
+                slide.classList.toggle("active", index === currentSlide);
+            });
+        }
+
+        function startSlideshow() {
+            clearInterval(slideshowTimer);
+            slideshowTimer = setInterval(() => showSlide(currentSlide + 1), 5000);
+        }
+
+        previousButton.addEventListener("click", () => {
+            showSlide(currentSlide - 1);
+            startSlideshow();
+        });
+
+        nextButton.addEventListener("click", () => {
+            showSlide(currentSlide + 1);
+            startSlideshow();
+        });
+
+        document.addEventListener("visibilitychange", () => {
+            if (document.hidden) {
+                clearInterval(slideshowTimer);
+            } else {
+                startSlideshow();
+            }
+        });
+
+        startSlideshow();
+
+        document.querySelectorAll("a[href]").forEach(link => {
+            const href = link.getAttribute("href");
+
+            if (!href || href.startsWith("#") || href.startsWith("mailto:") || link.target === "_blank") {
+                return;
+            }
+
+            const destination = new URL(href, window.location.href);
+
+            if (destination.origin !== window.location.origin || destination.pathname === window.location.pathname) {
+                return;
+            }
+
+            link.addEventListener("click", event => {
+                event.preventDefault();
+                document.body.classList.add("page-exit");
+
+                setTimeout(() => {
+                    window.location.href = destination.href;
+                }, 280);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

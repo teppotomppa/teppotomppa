@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Chydenia Mobile Application - Thomas Sihvola">
+
+    <title>Chydenia Mobile Application | Thomas Sihvola</title>
+
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+                TS<span>.</span>
+            </a>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="../index.html#home">Home</a>
+                </li>
+                <li>
+                    <a href="../index.html#about">About</a>
+                </li>
+                <li>
+                    <a href="../index.html#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="../index.html#experience">Experience</a>
+                </li>
+                <li>
+                    <a href="../index.html#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="project-detail">
+
+            <div class="project-detail-header">
+                <div class="project-detail-heading">
+                    <p class="project-type">SOFTWARE DEVELOPMENT</p>
+
+                    <h1>Chydenia<br><span>Mobile Application</span></h1>
+
+                    <p class="project-intro">
+                        A full-stack digital platform for Shopping Center Chydenia,
+                        combining a customer mobile app, an admin dashboard and a
+                        central API with persistent data storage.
+                    </p>
+                </div>
+
+                <aside class="project-meta" aria-label="Project details">
+                    <div>
+                        <span>Context</span>
+                        <strong>Internships &amp; bachelor's thesis</strong>
+                    </div>
+                    <div>
+                        <span>Team</span>
+                        <strong>Two student developers</strong>
+                    </div>
+                    <div>
+                        <span>Client</span>
+                        <strong>Shopping Center Chydenia</strong>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="project-slideshow" aria-roledescription="carousel" aria-label="Chydenia application images">
+                <div class="slides"></div>
+
+                <button class="slideshow-button slideshow-previous" type="button" aria-label="Previous image">&#8592;</button>
+                <button class="slideshow-button slideshow-next" type="button" aria-label="Next image">&#8594;</button>
+
+            </div>
+
+            <div class="project-detail-content">
+
+                <div class="project-story">
+                    <div>
+                        <p class="content-kicker">PROJECT STORY</p>
+                        <h2>From idea to outcome</h2>
+                    </div>
+                    <div class="project-copy">
+                        <p><strong>Beginning.</strong> The project started as a digital service concept for Shopping Center Chydenia in Kokkola. During two professional internships, I worked with a fellow student and the Chydenia staff to understand the client’s needs and define a useful experience for visitors, stores and administrators.</p>
+                        <p><strong>Development.</strong> Together, we developed the platform from the ground up as part of our work and bachelor’s thesis. The customer-facing mobile app was built with React Native and Expo, allowing users to create accounts, browse stores and services, view opening hours, discover offers and events, send feedback and subscribe to newsletters. A React and Vite admin dashboard gave administrators and editors tools to manage this content, users and roles.</p>
+                        <p><strong>Outcome.</strong> The result was a connected full-stack pilot: a mobile app and admin dashboard communicating with a Node.js and Express REST API, with SQLite providing persistent storage for users, stores, opening hours, offers, events, feedback and newsletter subscriptions.</p>
+                    </div>
+                </div>
+
+                <div class="dashboard-section">
+                    <div class="dashboard-heading">
+                        <div>
+                            <p class="content-kicker">ADMIN DASHBOARD</p>
+                            <h2>Managing the mobile experience</h2>
+                        </div>
+                        <p class="dashboard-intro">
+                            A browser-based control panel for the people who manage
+                            Chydenia's content and services.
+                        </p>
+                    </div>
+
+                    <div class="project-slideshow dashboard-slideshow" aria-roledescription="carousel"
+                        aria-label="Chydenia admin dashboard images">
+                        <div class="slides dashboard-slides"></div>
+
+                        <button class="slideshow-button dashboard-previous" type="button"
+                            aria-label="Previous admin dashboard image">&#8592;</button>
+                        <button class="slideshow-button dashboard-next" type="button"
+                            aria-label="Next admin dashboard image">&#8594;</button>
+                    </div>
+
+                    <div class="dashboard-copy">
+                        <p>
+                            The Admin Dashboard was built for administrators and editors
+                            to control the content displayed in the Chydenia mobile app.
+                            Instead of changing the mobile application directly, authorized
+                            users can manage the shopping center's information from one
+                            browser-based interface.
+                        </p>
+                        <p>
+                            The dashboard supports user roles and permissions, store and
+                            service management, opening hours, offers, events, newsletter
+                            subscriptions and customer feedback. Changes are stored through
+                            the backend and made available to the mobile app through the
+                            shared REST API.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="../index.html#projects" class="back-link">
+                ← Back to Projects
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Thomas Sihvola</p>
+            <p>Information & Communication Technology Engineer</p>
+        </div>
+    </footer>
+
+    <script>
+        const chydeniaImages = [1, 2, 3, 11, 12, 13, 16];
+        const slidesContainer = document.querySelector(".slides");
+
+        chydeniaImages.forEach((imageNumber, imageIndex) => {
+            const slide = document.createElement("figure");
+            slide.className = imageIndex === 0 ? "slide active" : "slide";
+            slide.innerHTML = `
+                <img src="../images/Chydenia-${imageNumber}.jpg" data-fallback="../images/project-1.jpg"
+                    alt="Chydenia mobile application screen ${imageNumber}">
+                <figcaption>${String(imageIndex + 1).padStart(2)} / ${chydeniaImages.length}</figcaption>
+            `;
+            slidesContainer.appendChild(slide);
+        });
+
+        const dashboardImages = [
+            "Admin-Dashboard-1.jpg",
+            "Admin-Dashboard-2.jpg",
+            "Admin-Dashboard-3.jpg"
+        ];
+        const dashboardSlidesContainer = document.querySelector(".dashboard-slides");
+
+        dashboardImages.forEach((imageName, imageIndex) => {
+            const slide = document.createElement("figure");
+            slide.className = imageIndex === 0 ? "slide active" : "slide";
+            slide.innerHTML = `
+                <img src="../images/${imageName}" alt="Chydenia admin dashboard screen ${imageIndex + 1}">
+                <figcaption>${String(imageIndex + 1).padStart(2)} / 3</figcaption>
+            `;
+            dashboardSlidesContainer.appendChild(slide);
+        });
+
+        const slides = slidesContainer.querySelectorAll(".slide");
+        const previousButton = document.querySelector(".slideshow-previous");
+        const nextButton = document.querySelector(".slideshow-next");
+        const dashboardSlides = dashboardSlidesContainer.querySelectorAll(".slide");
+        const dashboardPreviousButton = document.querySelector(".dashboard-previous");
+        const dashboardNextButton = document.querySelector(".dashboard-next");
+        let currentSlide = 0;
+        let slideshowTimer;
+        let currentDashboardSlide = 0;
+        let dashboardSlideshowTimer;
+
+        document.querySelectorAll(".slides img").forEach(image => {
+            image.addEventListener("error", () => {
+                if (image.dataset.fallback && !image.src.endsWith(image.dataset.fallback)) {
+                    image.src = image.dataset.fallback;
+                    return;
+                }
+
+                image.closest(".slide").hidden = true;
+            });
+        });
+
+        function showSlide(slideIndex) {
+            const nextSlide = (slideIndex + slides.length) % slides.length;
+
+            if (nextSlide === currentSlide) {
+                return;
+            }
+
+            currentSlide = nextSlide;
+            slides.forEach((slide, index) => {
+                slide.classList.toggle("active", index === currentSlide);
+            });
+        }
+
+        function showDashboardSlide(slideIndex) {
+            currentDashboardSlide = (slideIndex + dashboardSlides.length) % dashboardSlides.length;
+
+            dashboardSlides.forEach((slide, index) => {
+                slide.classList.toggle("active", index === currentDashboardSlide);
+            });
+        }
+
+        function startSlideshow() {
+            clearInterval(slideshowTimer);
+            slideshowTimer = setInterval(() => showSlide(currentSlide + 1), 5000);
+        }
+
+        function startDashboardSlideshow() {
+            clearInterval(dashboardSlideshowTimer);
+            dashboardSlideshowTimer = setInterval(() => {
+                showDashboardSlide(currentDashboardSlide + 1);
+            }, 5000);
+        }
+
+        previousButton.addEventListener("click", () => {
+            showSlide(currentSlide - 1);
+            startSlideshow();
+        });
+
+        nextButton.addEventListener("click", () => {
+            showSlide(currentSlide + 1);
+            startSlideshow();
+        });
+
+        dashboardPreviousButton.addEventListener("click", () => {
+            showDashboardSlide(currentDashboardSlide - 1);
+            startDashboardSlideshow();
+        });
+
+        dashboardNextButton.addEventListener("click", () => {
+            showDashboardSlide(currentDashboardSlide + 1);
+            startDashboardSlideshow();
+        });
+
+        document.addEventListener("visibilitychange", () => {
+            if (document.hidden) {
+                clearInterval(slideshowTimer);
+                clearInterval(dashboardSlideshowTimer);
+            } else {
+                startSlideshow();
+                startDashboardSlideshow();
+            }
+        });
+
+        startSlideshow();
+        startDashboardSlideshow();
+
+        document.querySelectorAll("a[href]").forEach(link => {
+            const href = link.getAttribute("href");
+
+            if (!href || href.startsWith("#") || href.startsWith("mailto:") || link.target === "_blank") {
+                return;
+            }
+
+            const destination = new URL(href, window.location.href);
+
+            if (destination.origin !== window.location.origin || destination.pathname === window.location.pathname) {
+                return;
+            }
+
+            link.addEventListener("click", event => {
+                event.preventDefault();
+                document.body.classList.add("page-exit");
+
+                setTimeout(() => {
+                    window.location.href = destination.href;
+                }, 280);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
